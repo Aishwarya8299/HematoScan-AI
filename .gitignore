@@ -28,6 +28,7 @@ wheels/
 venv/
 ENV/
 
+
 # IDE
 .idea/
 .vscode/
@@ -40,8 +41,6 @@ Thumbs.db
 
 # Hematoscan runtime artifacts
 backend/uploads/
-backend/models/*.h5
-backend/app/ml/weights/*.h5
 
 # Logs
 *.log
