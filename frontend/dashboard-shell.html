@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HematoScan AI clinical dashboard shell">
+  <title>HematoScan AI | Dashboard Shell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/shell.css">
+</head>
+<body>
+  <div class="app-shell">
+    <button class="scrim" type="button" aria-label="Close navigation" data-sidebar-close></button>
+
+    <aside class="sidebar" data-sidebar aria-label="Primary navigation">
+      <div class="brand-lockup">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-name">HematoScan <b>AI</b></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <p class="nav-label">Main</p>
+        <a class="nav-link is-active" href="technician.html" aria-current="page">
+          <span class="nav-icon" aria-hidden="true">▦</span>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-link" href="analysis.html">
+          <span class="nav-icon" aria-hidden="true">⌁</span>
+          <span>New Analysis</span>
+        </a>
+
+        <p class="nav-label">Reports</p>
+        <a class="nav-link" href="history.html">
+          <span class="nav-icon" aria-hidden="true">↺</span>
+          <span>History</span>
+        </a>
+        <a class="nav-link" href="reports.html">
+          <span class="nav-icon" aria-hidden="true">▤</span>
+          <span>Reports</span>
+        </a>
+
+        <p class="nav-label">System</p>
+        <a class="nav-link" href="settings.html">
+          <span class="nav-icon" aria-hidden="true">⚙</span>
+          <span>Settings</span>
+        </a>
+        <a class="nav-link" href="#help">
+          <span class="nav-icon" aria-hidden="true">?</span>
+          <span>Help</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-account">
+        <div class="account-card">
+          <span class="avatar" aria-hidden="true">L</span>
+          <span>
+            <strong>Lab Professional</strong>
+            <small>Technician portal</small>
+          </span>
+        </div>
+        <button class="sign-out" type="button">
+          <span aria-hidden="true">↪</span>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-header">
+        <div class="header-leading">
+          <button class="icon-button menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-sidebar-open>
+            <span aria-hidden="true">☰</span>
+          </button>
+          <div>
+            <p class="eyebrow">Technician portal</p>
+            <h1>Dashboard</h1>
+            <p class="header-subtitle">Welcome back, ready to analyze blood samples?</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <span class="status-pill status-pill--online"><span class="status-dot" aria-hidden="true"></span>AI Model Online</span>
+          <button class="avatar avatar--header" type="button" aria-label="Open account menu">L</button>
+        </div>
+      </header>
+
+      <section class="content-area" id="dashboard" aria-labelledby="dashboard-title">
+        <div class="welcome-banner">
+          <div>
+            <p class="banner-kicker">Clinical analysis workspace</p>
+            <h2 id="dashboard-title">Hello, Lab Professional!</h2>
+            <p>Your AI-powered blood cancer detection system is ready.</p>
+            <p>Upload a blood smear image to get instant results.</p>
+          </div>
+          <a class="button button--light" href="analysis.html"><span aria-hidden="true">⌁</span>Start New Analysis</a>
+        </div>
+
+        <div class="preview-note" role="status">
+          <span class="preview-note__mark" aria-hidden="true">i</span>
+          Shared shell preview. Dashboard modules will be added in the next frontend step.
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/shell.js"></script>
+</body>
+</html>

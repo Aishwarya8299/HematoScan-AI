@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for HematoScan AI">
+  <title>HematoScan AI | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+<body class="auth-page signup-page">
+  <main class="auth-layout">
+    <section class="auth-brand-panel" aria-labelledby="signup-welcome-title">
+      <a class="auth-brand" href="index.html" aria-label="HematoScan AI home">
+        <span class="auth-brand__mark" aria-hidden="true">✦</span>
+        <span>HematoScan <b>AI</b></span>
+      </a>
+      <div class="auth-brand__content">
+        <p class="auth-kicker">Secure clinical workspace</p>
+        <h1 id="signup-welcome-title">Join the<br>clinical workspace.</h1>
+        <p>Create your professional profile to work with faster, clearer blood smear analysis.</p>
+        <ul class="auth-benefits">
+          <li><span aria-hidden="true">⌁</span><span>One workspace for lab teams</span></li>
+          <li><span aria-hidden="true">◷</span><span>Focused review from upload to sign-off</span></li>
+          <li><span aria-hidden="true">✓</span><span>Private role-based access</span></li>
+        </ul>
+      </div>
+      <p class="auth-brand-panel__footer">Clinical decision support for laboratory teams</p>
+    </section>
+
+    <section class="auth-form-panel" aria-labelledby="register-title">
+      <div class="auth-card">
+        <div class="auth-card__heading">
+          <p class="auth-kicker">HematoScan portal</p>
+          <h2 id="register-title">Create account</h2>
+          <p>Set up your professional access request.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Authentication options">
+          <a class="auth-tab" role="tab" aria-selected="false" href="login.html?role=tech">Login</a>
+          <a class="auth-tab is-active" role="tab" aria-selected="true" href="signup.html">Register</a>
+        </div>
+
+        <form class="auth-form signup-form" data-signup-form novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <div class="input-wrap"><span aria-hidden="true">○</span><input id="name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" required minlength="2"></div>
+          </div>
+          <div class="form-field">
+            <label for="email">Work email</label>
+            <div class="input-wrap"><span aria-hidden="true">@</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@hospital.org" required></div>
+          </div>
+          <input name="role" type="hidden" value="technician">
+          <div class="form-field">
+            <label for="password">Password</label>
+            <div class="input-wrap"><span aria-hidden="true">●</span><input id="password" name="password" type="password" autocomplete="new-password" placeholder="8+ characters" required minlength="8"></div>
+          </div>
+          <div class="form-field">
+            <label for="confirm-password">Confirm password</label>
+            <div class="input-wrap"><span aria-hidden="true">●</span><input id="confirm-password" name="confirm_password" type="password" autocomplete="new-password" placeholder="Repeat your password" required></div>
+          </div>
+          <label class="consent-row"><input type="checkbox" name="consent" required><span>I confirm that I am a healthcare or laboratory professional.</span></label>
+          <button class="button auth-submit" type="submit"><span>Create account</span><span aria-hidden="true">→</span></button>
+          <p class="form-message" role="status" aria-live="polite" data-signup-message></p>
+        </form>
+        <a class="back-home" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/signup.js"></script>
+</body>
+</html>

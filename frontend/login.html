@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to HematoScan AI">
+  <title>HematoScan AI | Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-brand-panel" aria-labelledby="welcome-title">
+      <a class="auth-brand" href="index.html" aria-label="HematoScan AI home">
+        <span class="auth-brand__mark" aria-hidden="true">✦</span>
+        <span>HematoScan <b>AI</b></span>
+      </a>
+      <div class="auth-brand__content">
+        <p class="auth-kicker">Secure clinical workspace</p>
+        <h1 id="welcome-title" data-welcome-title>Welcome back,<br>Lab Professional.</h1>
+        <p data-welcome-copy>Sign in to access your AI-powered blood smear analysis workspace. Fast, focused, and secure.</p>
+        <ul class="auth-benefits">
+          <li><span aria-hidden="true">⌁</span><span>Two-stage deep learning analysis</span></li>
+          <li><span aria-hidden="true">◷</span><span>Results ready for focused review</span></li>
+          <li><span aria-hidden="true">✓</span><span>Role-based, private access</span></li>
+        </ul>
+      </div>
+      <p class="auth-brand-panel__footer">Clinical decision support for laboratory teams</p>
+    </section>
+
+    <section class="auth-form-panel" aria-labelledby="signin-title">
+      <div class="auth-card">
+        <div class="auth-card__heading">
+          <p class="auth-kicker">HematoScan portal</p>
+          <h2 id="signin-title">Sign in</h2>
+          <p data-form-subtitle>Access your technician dashboard.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Authentication options">
+          <a class="auth-tab is-active" role="tab" aria-selected="true" href="login.html">Login</a>
+          <a class="auth-tab" role="tab" aria-selected="false" href="signup.html">Register</a>
+        </div>
+
+        <form class="auth-form" data-login-form>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <div class="input-wrap"><span aria-hidden="true">@</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@hospital.org" required></div>
+          </div>
+          <div class="form-field">
+            <div class="label-row"><label for="password">Password</label><a href="#forgot">Forgot password?</a></div>
+            <div class="input-wrap"><span aria-hidden="true">●</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button class="password-toggle" type="button" aria-label="Show password" data-password-toggle>Show</button></div>
+          </div>
+          <button class="button auth-submit" type="submit"><span data-submit-label>Sign in</span><span aria-hidden="true">→</span></button>
+          <p class="form-message" role="status" aria-live="polite" data-form-message></p>
+        </form>
+
+        <div class="demo-box">
+          <strong><span aria-hidden="true">i</span> Demo credentials</strong>
+          <p><span data-demo-label>Technician</span><code data-demo-email>technician@hematoscan.local</code></p>
+          <p>Password <code>ChangeMe123!</code></p>
+        </div>
+        <a class="back-home" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/login.js?v=2"></script>
+</body>
+</html>

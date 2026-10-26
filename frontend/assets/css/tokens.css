@@ -1,0 +1,22 @@
+:root {
+  --color-teal-700: #0f766e;
+  --color-teal-600: #0d9488;
+  --color-teal-500: #14b8a6;
+  --color-teal-100: #dff5f2;
+  --color-slate-900: #0f172a;
+  --color-slate-700: #334155;
+  --color-slate-500: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-ice: #f3f8fb;
+  --color-white: #ffffff;
+  --color-line: #e2eaf0;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-danger-soft: #fff1f2;
+  --shadow-card: 0 12px 30px rgba(15, 65, 85, 0.08);
+  --shadow-panel: 0 18px 45px rgba(15, 65, 85, 0.12);
+  --radius-card: 12px;
+  --radius-control: 9px;
+  --sidebar-width: 250px;
+  --header-height: 88px;
+}

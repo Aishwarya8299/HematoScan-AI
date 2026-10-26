@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HematoScan AI blood smear analysis for laboratory professionals">
+  <title>HematoScan AI | Blood Smear Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body class="landing-page">
+  <div class="cell-field" aria-hidden="true">
+    <span class="cell cell--one"></span>
+    <span class="cell cell--two"></span>
+    <span class="cell cell--three"></span>
+    <span class="cell cell--four"></span>
+    <span class="cell cell--five"></span>
+    <span class="cell cell--six"></span>
+  </div>
+
+  <header class="landing-header">
+    <a class="public-brand" href="index.html" aria-label="HematoScan AI home">
+      <span class="public-brand__mark" aria-hidden="true">✦</span>
+      <span>HematoScan <b>AI</b></span>
+    </a>
+    <nav class="public-nav" aria-label="Public navigation">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a class="public-nav__login" href="login.html?role=tech">Lab Login</a>
+    </nav>
+    <button class="landing-menu" type="button" aria-label="Open menu" aria-expanded="false" data-landing-menu>☰</button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <div class="status-pill status-pill--hero"><span class="status-dot" aria-hidden="true"></span><span data-system-status>AI model online</span></div>
+        <p class="hero__eyebrow">AI-powered · real-time · clinical grade</p>
+        <h1 id="hero-title">Blood smear analysis, <span>made clearer.</span></h1>
+        <p class="hero__description">HematoScan AI helps laboratory professionals move from a microscope image to a focused clinical review with speed and confidence.</p>
+        <div class="hero__actions">
+          <a class="button button--teal" href="login.html?role=tech">Lab Login <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero__note"><span aria-hidden="true">⌁</span> Built for lab teams. Designed for careful review.</p>
+      </div>
+      <div class="hero__visual" aria-label="Blood smear analysis illustration">
+        <div class="scan-orbit scan-orbit--outer"></div>
+        <div class="scan-orbit scan-orbit--inner"></div>
+        <div class="scan-panel">
+          <div class="scan-panel__top"><span>LIVE ANALYSIS</span><span class="scan-panel__signal"><i></i> READY</span></div>
+          <div class="microscope-frame">
+            <div class="blood-cell blood-cell--large"><span></span></div>
+            <div class="blood-cell blood-cell--small blood-cell--a"></div>
+            <div class="blood-cell blood-cell--small blood-cell--b"></div>
+            <div class="blood-cell blood-cell--small blood-cell--c"></div>
+            <div class="scan-line"></div>
+            <span class="frame-label frame-label--top">SAMPLE FIELD</span>
+            <span class="frame-label frame-label--bottom">128 × 128 PX</span>
+          </div>
+          <div class="scan-panel__bottom"><span>GATEKEEPER</span><strong>Blood smear detected</strong><span class="confidence">98.4%</span></div>
+        </div>
+        <div class="floating-readout floating-readout--top"><span class="readout-dot"></span><span><small>MODEL STATUS</small><strong>Operational</strong></span></div>
+        <div class="floating-readout floating-readout--bottom"><span class="readout-icon">✓</span><span><small>REVIEW READY</small><strong>Results in seconds</strong></span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" id="how-it-works" aria-label="System capabilities">
+      <div><strong>01</strong><span>Upload a blood smear</span></div>
+      <div><strong>02</strong><span>Gate invalid images early</span></div>
+      <div><strong>03</strong><span>Review multi-class results</span></div>
+      <div class="trust-strip__status"><span class="status-dot" aria-hidden="true"></span><span data-system-status>System available</span></div>
+    </section>
+
+    <section class="feature-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="hero__eyebrow">One focused workspace</p>
+        <h2 id="features-title">Built for the moments that need clarity.</h2>
+        <p>From first upload to result, the workflow keeps important signals visible and the next action close.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-card--accent"><span class="feature-card__number">01</span><span class="feature-icon" aria-hidden="true">⌁</span><h3>Two-stage intelligence</h3><p>A gatekeeper checks image quality before the leukemia classifier analyzes valid blood smears.</p></article>
+        <article class="feature-card"><span class="feature-card__number">02</span><span class="feature-icon" aria-hidden="true">◷</span><h3>Fast review loop</h3><p>Keep uploads moving while results are prepared for a clinician's focused review.</p></article>
+        <article class="feature-card"><span class="feature-card__number">03</span><span class="feature-icon" aria-hidden="true">⌑</span><h3>Clear handoff</h3><p>Priority cases, confidence scores, notes, and sign-off belong in one connected workspace.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="landing-footer"><span>HematoScan AI</span><span>Clinical decision support for laboratory teams</span></footer>
+  <script src="assets/js/landing.js"></script>
+</body>
+</html>

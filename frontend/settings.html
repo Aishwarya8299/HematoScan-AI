@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HematoScan AI account and workspace settings">
+  <title>HematoScan AI | Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/shell.css">
+  <link rel="stylesheet" href="assets/css/settings.css">
+</head>
+<body>
+  <div class="app-shell">
+    <button class="scrim" type="button" aria-label="Close navigation" data-sidebar-close></button>
+    <aside class="sidebar" data-sidebar aria-label="Primary navigation">
+      <a class="brand-lockup" href="index.html" aria-label="HematoScan AI home"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-name">HematoScan <b>AI</b></span></a>
+      <nav class="sidebar-nav">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-link" href="technician.html"><span class="nav-icon" aria-hidden="true">▦</span><span>Dashboard</span></a>
+        <a class="nav-link" href="analysis.html"><span class="nav-icon" aria-hidden="true">⌁</span><span>New Analysis</span></a>
+        <p class="nav-label">Reports</p>
+        <a class="nav-link" href="history.html"><span class="nav-icon" aria-hidden="true">↺</span><span>History</span></a>
+        <a class="nav-link" href="reports.html"><span class="nav-icon" aria-hidden="true">▤</span><span>Reports</span></a>
+        <p class="nav-label">System</p>
+        <a class="nav-link is-active" href="settings.html" aria-current="page"><span class="nav-icon" aria-hidden="true">⚙</span><span>Settings</span></a>
+        <a class="nav-link" href="#help"><span class="nav-icon" aria-hidden="true">?</span><span>Help</span></a>
+      </nav>
+      <div class="sidebar-account"><div class="account-card"><span class="avatar" aria-hidden="true">L</span><span><strong>Clinical workspace</strong><small>Account settings</small></span></div><button class="sign-out" type="button" data-sign-out><span aria-hidden="true">↪</span><span>Sign Out</span></button></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-header"><div class="header-leading"><button class="icon-button menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-sidebar-open><span aria-hidden="true">☰</span></button><div><p class="eyebrow">Workspace preferences</p><h1>Settings</h1><p class="header-subtitle">Manage your account and notification preferences.</p></div></div><div class="header-actions"><span class="status-pill status-pill--online"><span class="status-dot" aria-hidden="true"></span><span>Workspace ready</span></span><button class="avatar avatar--header" type="button" aria-label="Open account menu">L</button></div></header>
+      <section class="content-area settings-content" aria-labelledby="settings-title">
+        <div class="page-intro"><div><p class="eyebrow">Account control</p><h2 id="settings-title">Your settings</h2><p>Keep your workspace aligned with the way your team works.</p></div></div>
+        <div class="settings-grid">
+          <section class="settings-card account-settings"><div class="settings-card__heading"><div><h3>Account information</h3><p>Your current portal identity.</p></div><span class="settings-icon" aria-hidden="true">○</span></div><div class="profile-row"><span class="profile-avatar">L</span><div><strong data-account-name>Lab Professional</strong><span data-account-role>Technician portal</span></div></div><div class="settings-field"><label for="account-email">Email address</label><input id="account-email" type="email" value="technician@hematoscan.local" readonly></div><div class="settings-field"><label for="display-name">Display name</label><input id="display-name" type="text" value="Lab Professional" data-display-name></div><button class="button button--outline settings-save" type="button" data-save-profile>Save profile</button><p class="settings-message" role="status" data-profile-message></p></section>
+          <section class="settings-card"><div class="settings-card__heading"><div><h3>Notifications</h3><p>Choose what reaches your workspace.</p></div><span class="settings-icon settings-icon--teal" aria-hidden="true">◷</span></div><label class="toggle-row"><span><strong>Case status updates</strong><small>Notify when an analysis finishes.</small></span><input type="checkbox" checked data-preference="case-status"><i aria-hidden="true"></i></label><label class="toggle-row"><span><strong>Priority case alerts</strong><small>Highlight high-priority cases.</small></span><input type="checkbox" checked data-preference="priority-alerts"><i aria-hidden="true"></i></label><label class="toggle-row"><span><strong>Weekly activity summary</strong><small>Receive a compact workspace summary.</small></span><input type="checkbox" data-preference="weekly-summary"><i aria-hidden="true"></i></label></section>
+          <section class="settings-card password-settings"><div class="settings-card__heading"><div><h3>Change password</h3><p>Use a strong password for clinical access.</p></div><span class="settings-icon settings-icon--red" aria-hidden="true">●</span></div><form data-password-form><div class="settings-field"><label for="current-password">Current password</label><input id="current-password" type="password" required></div><div class="settings-field"><label for="new-password">New password</label><input id="new-password" type="password" minlength="8" required></div><div class="settings-field"><label for="repeat-password">Repeat new password</label><input id="repeat-password" type="password" required></div><button class="button settings-save" type="submit">Update password</button><p class="settings-message" role="status" data-password-message></p></form></section>
+          <section class="settings-card appearance-settings"><div class="settings-card__heading"><div><h3>Appearance</h3><p>Keep the interface comfortable for long reviews.</p></div><span class="settings-icon settings-icon--violet" aria-hidden="true">◐</span></div><label class="theme-row"><span><strong>Focus mode</strong><small>Reduce visual density for review work.</small></span><input type="checkbox" data-focus-mode><i aria-hidden="true"></i></label><div class="settings-note"><span aria-hidden="true">i</span><p>Your preferences are stored in this browser and can be changed anytime.</p></div></section>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/shell.js"></script>
+  <script src="assets/js/settings.js"></script>
+</body>
+</html>
