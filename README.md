@@ -1,6 +1,6 @@
 # Hematoscan
 
-Production-grade B2B Diagnostic Decision Support System for hospital **Lab Technicians** and **Doctors**. Patients have no portal access.
+Production-grade B2B Diagnostic Decision Support System for hospital **Lab Technicians**.
 
 **Project location:** `D:\hematoscan`
 
@@ -16,7 +16,6 @@ Production-grade B2B Diagnostic Decision Support System for hospital **Lab Techn
 - Auth API with login, current-user, logout, and development account seeding
 - Gatekeeper-first ML inference: invalid images are rejected before leukemia classification
 - Technician-only multipart upload endpoint with MongoDB case persistence
-- Doctor priority queue, case detail, and review-note endpoints
 - Local `.h5` models loaded at startup when enabled
 
 ## Quick start
